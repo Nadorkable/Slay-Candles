@@ -1,0 +1,136 @@
+<html class="ProductPage">
+  <head>
+    <link rel="stylesheet" href="loginstyles.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="logoContent">
+        <div class="nav_left">
+          <a href="index.html" class="logo"
+            ><img id="logo" src="images/login-candle.png" alt=""
+          /></a><span>Slay Candles</span>
+        </div>
+        <div class="nav_middle">
+          <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="ContactPage.html">Contact</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+          </ul>
+        </div>
+        <div class="nav_right">
+          <a href="login.html"
+            ><img class="User" src="images/user.png" onclick=""
+          /></a>
+          <img
+            class="Shopping_Cart"
+            src="images/shopping-cart.png"
+            onclick=""
+          />
+          <!--Search bar-->
+        </div>
+      </div>
+      <!--Nav bar-->
+    </header>
+    <!--HEADER-->
+    <div class="big_container">
+      <div class="product_container">
+        <div class="cont img_container">
+          <div class="big_pic">
+            <img
+              class="photo big_photo"
+              id="bigpic"
+              src="Candles\firstPillar_1.jpg"
+              style="border-color: lightblue"
+            />
+          </div>
+
+          <div class="small_pic">
+            <img
+              class="photo small_photo"
+              onclick="showImg(this.src)"
+              src="Candles\firstPillar_2.jpg"
+              style="border-color: lightblue"
+            />
+
+            <img
+              class="photo small_photo"
+              onclick="showImg(this.src)"
+              src="Candles\firstPillar_3.jpg"
+              style="border-color: lightblue"
+            />
+
+            <img
+              class="photo small_photo"
+              onclick="showImg(this.src)"
+              src="Candles\firstPillar_1.jpg"
+              style="border-color: lightblue"
+            />
+          </div>
+        </div>
+
+        <div class="cont disc_container">
+          <span>
+            <a href="index.html">Home</a> /
+            <a href="shop.html">Shop</a> /
+            <a href="#">Pillar Candles</a>
+          </span>
+          <div id="details">
+            <h1>PILLAR 3 X 9 UNSCENTED WILLIAMSBURG BLUE</h1>
+
+            <p id="price">LE 799.00</p>
+            <p id="subtitle">Shipping calculated at checkout.</p>
+            <p id="description">
+              Timberline™ Pillars burn an impressive 17 hours per inch. For best
+              results, burn Timberline™ Pillar candles for a minimum of 6 hours
+              on initial lighting to avoid tunneling.
+            </p>
+
+            <div class="quantity">
+              <button id="decrement" onclick="subBtn()">-</button>
+              <input type="text" id="qty" value="1" />
+              <button id="increment" onclick="addBtn()">+</button>
+            </div>
+            <div class="bi-btn">
+              <div><button id="addCart">Add to Cart</button></div>
+              <div><button id="addBuy">Buy Now</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="FooterContent">
+        <div class="first">
+          <ul class="Left">
+            <li><a href="#Name">Slay Candles</a></li>
+            <li><a href="Mail">slayCandles@gmail.com</a></li>
+            <li>
+              <img class="Facebook" src="images/facebook.png" onclick="" />
+              <img class="Instagram" src="images/instagram.png" onclick="" />
+              <img class="Twitter" src="images/twitter.png" onclick="" />
+              <img class="Youtube" src="images/youtube.png" onclick="" />
+            </li>
+          </ul>
+        </div>
+        <div class="second">
+          <ul class="Middle">
+            <li><a href="#Support">Support</a></li>
+            <li><a href="ContactPage.html">Contact</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+          </ul>
+        </div>
+        <div class="third">
+          <ul class="Right">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#Candles">Candles</a></li>
+            <li><a href="#Care-kit">Care Kit</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Nav bar-->
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

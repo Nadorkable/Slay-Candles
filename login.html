@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="LoginPage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- linking files  -->
+    <link rel="stylesheet" href="loginstyles.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="login_container">
+      <div class="hero">
+        <div class="form-box">
+          <div class="login-candle">
+            <img src="images/login-candle.png" alt="candle" />
+          </div>
+          <div class="button-box">
+            <div>
+              <div id="btn"></div>
+              <button type="button" class="toggle-btn" onclick="login()">
+                Login
+              </button>
+              <button type="button" class="toggle-btn" onclick="register()">
+                Register
+              </button>
+            </div>
+          </div>
+          <!--inputs-->
+          <!--Login-->
+          <form id="login" class="login" onsubmit="event.preventDefault(); window.location.href = 'index.html'">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Username"
+              required
+            />
+            <div class="pw-input">
+              <input
+                type="password"
+                class="input-field password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <img src="images/close-eye.png" class="eyeicon" alt="open" />
+            </div>
+
+            <div class="agree">
+              <input type="checkbox" class="checkbox" />
+              <p id="gray" class="remember-me">Remember Password</p>
+            </div>
+            <button 
+              type="submit"
+              class="submit-btn"
+            >
+              Login
+            </button>
+          </form>
+          <!--Register-->
+          <form
+            id="register"
+            class="register"
+            onsubmit="event.preventDefault();checkEmail()"
+          >
+            <input
+              type="email"
+              id="email-input"
+              class="input-field"
+              placeholder="Email Address"
+              required
+            />
+            
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Create Username"
+              required
+            />
+            <div class="pw-input">
+              <input
+                type="password"
+                class="input-field password"
+                placeholder="Create Password"
+                required
+              />
+              <img src="images/close-eye.png" class="eyeicon" alt="open" />
+            </div>
+            <div class="pw-input">
+              <input
+                type="password"
+                class="input-field password"
+                placeholder="Confirm Password"
+                required
+              />
+              <img src="images/close-eye.png" class="eyeicon" alt="open" />
+            </div>
+
+            <div class="agree">
+              <input type="checkbox" class="checkbox" />
+              <p id="gray" class="remember-me">
+                I agree to the terms & conditions
+              </p>
+            </div>
+            <button type="submit" class="submit-btn2">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="FooterContent">
+        <div class="first">
+          <ul class="Left">
+            <li><a href="#Name">Slay Candles</a></li>
+            <li><a href="Mail">slayCandles@gmail.com</a></li>
+            <li>
+              <img class="Facebook" src="images/facebook.png" onclick="" />
+              <img class="Instagram" src="images/instagram.png" onclick="" />
+              <img class="Twitter" src="images/twitter.png" onclick="" />
+              <img class="Youtube" src="images/youtube.png" onclick="" />
+            </li>
+          </ul>
+        </div>
+        <div class="second">
+          <ul class="Middle">
+            <li><a href="#Support">Support</a></li>
+            <li><a href="ContactPage.html">Contact</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+          </ul>
+        </div>
+        <div class="third">
+          <ul class="Right">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#Candles">Candles</a></li>
+            <li><a href="#Care-kit">Care Kit</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

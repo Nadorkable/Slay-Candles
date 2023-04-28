@@ -1,0 +1,1143 @@
+/* ------------------- GLOBAL ------------------- */
+/* #region*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Verdana, sans-serif;
+  color: rgb(71, 40, 55);
+  text-decoration: none;
+}
+/* #endregion*/
+/* ------------------- HEADER ------------------- */
+/* #region */
+.HomePage body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logoContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fdd5df;
+  align-items: center;
+  padding: 10px;
+}
+
+.logoContent li {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#logo {
+  height: 40px;
+  padding-left: 20px;
+}
+
+#logo:hover {
+  transform: translateY(-5px);
+  transition: all 150ms;
+}
+.navlist li:hover {
+  text-decoration: underline;
+}
+/* 
+.search-bar {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  background: transparent;
+  border-radius: 10px;
+  float: right;
+  padding-left: 200%;
+  margin-right: -150%;
+}
+
+.fas fa-search{
+  height: 4%;
+  width: 4%;
+}
+
+
+.search-bar:hover > .search-txt {
+  width: 220px;
+  padding: 10px 4px;
+}
+
+.search-bar:hover > .search-txt {
+  background: pink;
+}
+.search-btn {
+  color: black;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 35px;
+  width: 0px;
+} */
+
+.navlist a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navlist {
+  display: inline-flex;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+}
+
+.User:hover,
+.Shopping_Cart:hover {
+  transform: translateY(-5px);
+  transition: all 150ms;
+}
+
+.Shopping_Cart,
+.User {
+  cursor: pointer;
+  height: 22px;
+}
+
+.nav_right {
+  padding-right: 40px;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* #endregion */
+/* ------------------- Footer ------------------- */
+/* #region */
+footer {
+  position: relative;
+  background-color: #fdd5df;
+  padding: 10px;
+}
+.FooterContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fdd5df;
+  padding: 5px;
+}
+
+.Facebook,
+.Instagram,
+.Twitter,
+.Youtube {
+  cursor: pointer;
+  height: 15px;
+  opacity: 0.4;
+}
+
+.FooterContent a {
+  color: #00000056;
+  font-size: 14px;
+}
+
+.FooterContent li {
+  padding: 1px;
+}
+/* #endregion */
+/* ------------------- LOGIN/WELCOME PAGE ------------------- */
+/* #region */
+.login_container {
+  margin: 0;
+  padding: 0;
+}
+
+.LoginPage body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPage .form-box {
+  width: 500px;
+  height: 600px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.LoginPage .button-box {
+  width: 220px fit-content;
+  position: absolute;
+  top: 19%;
+  box-shadow: 0 0 20px 9px #ff24911f;
+  border-radius: 30px;
+}
+
+.LoginPage .toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+.LoginPage #btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #f9a3ca, #ffe3f1);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.LoginPage .login-candle {
+  position: absolute;
+  top: 5%;
+}
+
+.LoginPage .login-candle img {
+  width: 60px;
+}
+
+.LoginPage .register {
+  width: 50%;
+  transition: 0.5s;
+  display: flex;
+  bottom: 140px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPage .login {
+  width: 50%;
+  transition: 0.5s;
+  display: flex;
+  bottom: 36%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPage .input-field {
+  width: 100%;
+  padding: 10px 0;
+  padding-top: 10px;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #292727;
+  outline: none;
+  background: transparent;
+}
+
+.LoginPage .submit-btn {
+  width: 85%;
+  height: 45%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  background: linear-gradient(to right, #f9a3ca, #ffe3f1);
+  box-shadow: 20 9 0px 0px #ff24911f;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  transition: all 250ms;
+}
+
+.LoginPage .submit-btn:hover,
+.LoginPage .submit-btn2:hover {
+  box-shadow: rgba(187, 44, 108, 0.35) 0 -25px 18px -14px inset,
+    rgba(115, 44, 108, 0.25) 0 1px 2px, rgba(115, 44, 108, 0.25) 0 2px 4px,
+    rgba(115, 44, 108, 0.25) 0 4px 8px, rgba(120, 44, 108, 0.25) 0 8px 16px,
+    rgba(115, 44, 108, 0.25) 0 16px 32px;
+  transform: scale(1.1) rotate(1deg);
+}
+
+.LoginPage .submit-btn2 {
+  width: 85%;
+  height: 45%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  background: linear-gradient(to left, #f9a3ca, #ffe3f1);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  transition: all 250ms;
+}
+
+.LoginPage .checkbox {
+  margin: 2px 6px 30px 0;
+  width: 13px;
+  height: 11px;
+  margin-left: 15px;
+  accent-color: #ff2491;
+}
+
+.LoginPage .agree {
+  display: flex;
+  justify-content: center;
+}
+
+.LoginPage #gray {
+  color: #777;
+  font-size: 12px;
+}
+
+.LoginPage #login {
+  position: absolute;
+}
+
+.LoginPage #register {
+  left: 500px;
+  position: absolute;
+}
+
+.LoginPage .pw-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.LoginPage .pw-input img {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 90%;
+  cursor: pointer;
+}
+
+/* Welcome */
+
+.Welcome .sub-btn {
+  width: 45%;
+  height: 6%;
+  margin-left: 25%;
+  margin-top: 15%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  background: linear-gradient(to left, #f9a3ca, #ffe3f1);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.Welcome .shop-btn {
+  width: 45%;
+  height: 6%;
+  margin-left: 25%;
+  padding: 10px 40px;
+  cursor: pointer;
+  display: block;
+  background: linear-gradient(to right, #f9a3ca, #ffe3f1);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.Welcome .sub-btn:hover,
+.Welcome .shop-btn:hover {
+  box-shadow: rgba(187, 44, 108, 0.35) 0 -25px 18px -14px inset,
+    rgba(115, 44, 108, 0.25) 0 1px 2px, rgba(115, 44, 108, 0.25) 0 2px 4px,
+    rgba(115, 44, 108, 0.25) 0 4px 8px, rgba(120, 44, 108, 0.25) 0 8px 16px,
+    rgba(115, 44, 108, 0.25) 0 16px 32px;
+  transform: scale(1.1) rotate(1deg);
+}
+
+.Welcome .popup {
+  width: 500px;
+  height: 550px;
+  background: #fff;
+  border-radius: 6px;
+  text-align: center;
+  padding: 0 20px 20px;
+  color: #333;
+  margin-top: 70px;
+}
+
+.Welcome .popup img {
+  width: 20%;
+  margin-top: -45px;
+}
+
+.Welcome .popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+/* #endregion */
+/* ------------------- HOME PAGE ------------------- */
+/* #region */
+.Slider {
+  padding: 2px;
+  margin-bottom: 70px;
+  background-color: none;
+}
+.mySlides {
+  display: flex;
+  aspect-ratio: 14 / 10;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.Slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  transform: scale(1.1);
+  transform: 0.8s;
+}
+
+.HomePage body {
+  font-family: Verdana, sans-serif;
+  background-color: rgb(251, 241, 242);
+}
+
+.HomePage img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.HomePage .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/*-----------------Categories-----------*/
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: none;
+  padding-bottom: 600px;
+  margin-top: -12cm;
+  text-align: center;
+}
+
+.pillar,
+.scent,
+.giftie {
+  height: 120px;
+  width: 120px;
+  padding: 10px;
+  border: 5px solid #f0ceff;
+  border-radius: 40%;
+}
+
+.pillar:hover,
+.scent:hover,
+.giftie:hover {
+  transform: translateY(-10px);
+  transition: all 150ms;
+}
+
+.Caption {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  color: #330044;
+  font-weight: 500;
+  padding: 15px;
+  text-align: center;
+}
+
+/* #Search {
+  cursor: pointer;
+  height: 4%;
+  width: 4%;
+}
+
+#search-bar {
+  display: none;
+  height: 5%;
+  width: 5%;
+  padding-right: 100px;
+} */
+
+/* The dots/bullets/indicators */
+.HomePage .radio {
+  display: none;
+}
+
+.HomePage .dot {
+  width: 100%;
+  position: absolute;
+  bottom: 8%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  transition: background-color 0.6s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HomePage .dot label {
+  width: 12px;
+  height: 12px;
+  background: #e75480;
+  margin: 0 10px;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.HomePage .dot label:hover {
+  opacity: 0.7;
+}
+
+.HomePage #radio-1:checked ~ #slide-1,
+.HomePage #radio-2:checked ~ #slide-2,
+.HomePage #radio-3:checked ~ #slide-3 {
+  opacity: 1;
+}
+
+.HomePage #radio-1:checked ~ #slide-1 img,
+.HomePage #radio-2:checked ~ #slide-2 img,
+.HomePage #radio-3:checked ~ #slide-3 img {
+  transform: scale(1);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+.HomePage #one,
+#two,
+#three {
+  padding-top: 5%;
+  height: 50%;
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HomePage .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.HomePage .next {
+  right: 6%;
+  top: 55%;
+  border-radius: 3px 0 0 3px;
+}
+
+.HomePage .prev {
+  left: 6%;
+  top: 55%;
+  border-radius: 3px 0 10px 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.HomePage .prev:hover,
+.HomePage .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.HomePage h1 {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 5%;
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.HomePage .small_prods_cont {
+  background-color: rgb(255, 251, 251);
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(2, 400px);
+  justify-content: space-evenly;
+  margin: 1px;
+  padding: 30px;
+}
+
+.HomePage .cont {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  border-radius: 9px;
+  box-shadow: rgba(158, 44, 108, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 108, 0.15) 0 1px 2px, rgba(187, 44, 108, 0.15) 0 2px 4px,
+    rgba(187, 44, 108, 0.15) 0 4px 8px, rgba(187, 44, 108, 0.15) 0 8px 16px,
+    rgba(187, 44, 108, 0.15) 0 16px 32px;
+}
+
+.HomePage .cont:hover {
+  cursor: pointer;
+  transition: all 150ms;
+  transform: scale(1.03);
+}
+
+.HomePage .pics {
+  width: 250px;
+  height: 250;
+  padding: 10;
+}
+
+.HomePage h3,
+.HomePage h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(147, 41, 93);
+}
+
+.HomePage .pagelink {
+  position: absolute;
+  height: 350;
+  width: 350;
+}
+/* ProductsContainer */
+.HomePage .ProductsContainer {
+  background-color: white;
+  bottom: 240%;
+  margin-top: -15cm;
+}
+
+.HomePage .line {
+  height: 4px;
+  width: 150px;
+  background-color: palevioletred;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5px;
+}
+/* #endregion */
+
+/* ------------------- CONTACT PAGE ------------------- */
+/* #region*/
+
+.ContactPage #contactPopUp {
+  background-color: white;
+  margin: 15%;
+  margin-top: 10%;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: #ffb6c1 0px 0px 0px 2px inset, #ffffff 10px -10px 0px -3px,
+    #fec6d0 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    #fdd5df 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    #f9dce3 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    #fddde0 40px -40px;
+}
+.ContactPage label {
+  display: block;
+  margin: 8px;
+}
+.ContactPage input {
+  background-color: rgb(255, 250, 255);
+  width: 300px;
+  height: 40px;
+  margin: 2px;
+  padding: 8px;
+  border: 1px solid palevioletred;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.ContactPage textarea {
+  background-color: rgb(255, 250, 255);
+  width: 450px;
+  height: 150px;
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid palevioletred;
+  border-radius: 10px;
+  resize: none;
+}
+.ContactPage h1 {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 5%;
+  padding-bottom: 3px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.ContactPage #line {
+  height: 4px;
+  width: 100px;
+  background-color: palevioletred;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.ContactPage button {
+  background-color: #fdd5df;
+  border-radius: 9px;
+  box-shadow: rgba(158, 44, 108, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 108, 0.15) 0 1px 2px, rgba(187, 44, 108, 0.15) 0 2px 4px,
+    rgba(187, 44, 108, 0.15) 0 4px 8px, rgba(187, 44, 108, 0.15) 0 8px 16px,
+    rgba(187, 44, 108, 0.15) 0 16px 32px;
+  color: rgb(214, 73, 120);
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  transition: all 250ms;
+  border-width: 1px;
+  margin-top: 3;
+  margin-bottom: 3;
+  padding-top: 8;
+  padding-bottom: 8;
+  padding-left: 10;
+  padding-right: 10;
+}
+
+.ContactPage .submit_button {
+  margin-top: 15px;
+  margin-left: 11px;
+  padding: 7px 20px;
+}
+
+.ContactPage .submit_button:hover {
+  box-shadow: rgba(187, 44, 108, 0.35) 0 -25px 18px -14px inset,
+    rgba(115, 44, 108, 0.25) 0 1px 2px, rgba(115, 44, 108, 0.25) 0 2px 4px,
+    rgba(115, 44, 108, 0.25) 0 4px 8px, rgba(120, 44, 108, 0.25) 0 8px 16px,
+    rgba(115, 44, 108, 0.25) 0 16px 32px;
+  transform: scale(1.1);
+}
+.ContactPage #file {
+  display: none;
+}
+.ContactPage #upload {
+  background-color: rgb(255, 250, 255);
+  border: 2px dashed #999;
+  border-radius: 10px;
+  padding: 70px 0;
+  text-align: center;
+  color: #999;
+}
+.ContactPage #upload:hover {
+  border: 2px solid #bb2c6c59;
+  color: #bb2c6c59;
+  cursor: pointer;
+}
+.ContactPage .error {
+  display: block;
+  color: red;
+}
+.ContactPage .error-border {
+  border: 1px solid red;
+}
+.ContactPage #success {
+  color: rgb(77, 179, 77);
+  margin: 6%;
+  margin-left: 10px;
+}
+
+.ContactPage #contactBackground {
+  background-image: url(images/slaypink.jpg);
+  padding: 1px;
+}
+.ContactPage body {
+  margin: 0;
+}
+
+/* #endregion*/
+/* ------------------- PRODUCT PAGE ------------------- */
+/* #region*/
+.ProductPage * {
+  margin: 0;
+  /* padding: 0; */
+}
+.ProductPage p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ProductPage li,
+.ProductPage a,
+.ProductPage form,
+.ProductPage input,
+.ProductPage h1,
+.ProductPage button,
+.ProductPage p {
+  color: rgb(71, 40, 55);
+  text-decoration: none;
+}
+
+.ProductsPage .line {
+  height: 4px;
+  width: 70px;
+  background-color: palevioletred;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.ProductPage input {
+  background-color: rgb(255, 250, 255);
+  width: 300px;
+  height: 40px;
+  margin: 2px;
+  padding: 8px;
+  border: 1px solid palevioletred;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.ProductPage h1 {
+  display: grid;
+  /* place-items: center;
+  text-align: center; */
+  padding: 5%;
+  padding-bottom: 3px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ProductPage button {
+  background-color: #fdd5df;
+  border-radius: 9px;
+  box-shadow: rgba(158, 44, 108, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 108, 0.15) 0 1px 2px, rgba(187, 44, 108, 0.15) 0 2px 4px,
+    rgba(187, 44, 108, 0.15) 0 4px 8px, rgba(187, 44, 108, 0.15) 0 8px 16px,
+    rgba(187, 44, 108, 0.15) 0 16px 32px;
+  color: rgb(214, 73, 120);
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  transition: all 250ms;
+  border-width: 1px;
+  margin-top: 3;
+  margin-bottom: 3;
+  padding-top: 8;
+  padding-bottom: 8;
+  padding-left: 10;
+  padding-right: 10;
+}
+
+.ProductPage #addCart,
+#addBuy {
+  margin-top: 20px;
+}
+
+.ProductPage .big_container {
+  background-image: url(images/pink.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.ProductPage .product_container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40px;
+
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  width: 80%;
+  /* Slay Shadow */
+  /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    rgb(255, 85, 85) 40px -40px;
+ */
+  /* Fancy Shadow */
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.ProductPage .cont {
+  display: flex;
+  width: 700px;
+  height: 400px;
+  flex-direction: column;
+  margin: 20px;
+  padding: 3rem;
+}
+.ProductPage .disc_container {
+  background-color: rgb(255, 250, 255);
+  padding-top: 10;
+}
+
+.ProductPage a:hover {
+  cursor: pointer;
+}
+
+.ProductPage #qty {
+  color: hsl(340, 40%, 42%);
+  text-align: center;
+  width: 40px;
+  border-radius: 2px;
+}
+.ProductPage #increment,
+.ProductPage #decrement {
+  border-radius: 2px;
+  width: 30;
+}
+
+.ProductPage #addCart:hover,
+.ProductPage #addBuy:hover {
+  transform: scale(1.04);
+}
+
+.ProductPage .quantity {
+  display: flex;
+}
+.ProductPage #addCart,
+.ProductPage #addBuy {
+  color: hsl(340, 40%, 42%);
+  width: 200px;
+}
+
+.ProductPage #details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.ProductPage .photo {
+  width: 120px;
+  height: 120px;
+  margin: 3;
+  border: 3px solid;
+}
+.ProductPage .big_photo {
+  width: 320px;
+  height: 320px;
+}
+.ProductPage .img_container {
+  background-color: rgb(255, 250, 255);
+  display: flex;
+  padding: 4;
+  height: 450px;
+}
+
+.ProductPage .big_pic {
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: center;
+}
+.ProductPage .small_pic {
+  display: flex;
+  justify-content: space-around;
+}
+.ProductPage .small_photo:hover {
+  transform: scale(1.03);
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.ProductPage #about_pic {
+  height: auto;
+  width: 70%;
+  padding: 5%;
+}
+
+.ProductPage #about {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ProductPage #about_para {
+  font-size: large;
+  color: palevioletred;
+}
+/* #endregion*/
+
+/* ------------------- ABOUT PAGE ------------------- */
+/* #region */
+
+.AboutPage #about_para {
+  font-size: large;
+  color: palevioletred;
+}
+
+.AboutPage .line {
+  height: 4px;
+  width: 150px;
+  background-color: palevioletred;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.AboutPage #about_pic {
+  height: 80%;
+  width: 90%;
+  margin: 0%;
+  border: 5px solid black;
+}
+.AboutPage #about {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 5%;
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ProductsPage h1 {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 5%;
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ProductsPage .small_prods_cont {
+  background-color: rgb(255, 251, 251);
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(3, 400px);
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 30px;
+}
+
+.ProductsPage .cont {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  border-radius: 9px;
+  box-shadow: rgba(158, 44, 108, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 108, 0.15) 0 1px 2px, rgba(187, 44, 108, 0.15) 0 2px 4px,
+    rgba(187, 44, 108, 0.15) 0 4px 8px, rgba(187, 44, 108, 0.15) 0 8px 16px,
+    rgba(187, 44, 108, 0.15) 0 16px 32px;
+}
+
+.ProductsPage .cont:hover {
+  cursor: pointer;
+  transition: all 150ms;
+  transform: scale(1.03);
+}
+
+.ProductsPage .pics {
+  width: 250px;
+  height: 250;
+  padding: 10;
+}
+
+.ProductsPage h3,
+.ProductsPage h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(147, 41, 93);
+}
+
+.ProductsPage .pagelink {
+  position: absolute;
+  height: 350;
+  width: 350;
+}
+
+/* #endregion */

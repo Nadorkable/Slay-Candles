@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+li,
+a,
+form,
+input,
+h1,
+button,
+p {
+  color: rgb(71, 40, 55);
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #bb2c6c59;
+}
+.nav_links,
+.icons {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 30px;
+}
+.icons li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.nav_links li a:hover {
+  color: blueviolet;
+}
+#small {
+  width: 30px;
+  height: 30px;
+}
+
+.ContactPage #contactPopUp {
+  background-color: white;
+  margin: 15%;
+  margin-top: 10%;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: #ffb6c1 0px 0px 0px 2px inset, #ffffff 10px -10px 0px -3px,
+    #fec6d0 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    #fdd5df 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    #f9dce3 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    #fddde0 40px -40px;
+}
+.ContactPage label {
+  display: block;
+  margin: 8px;
+}
+.ContactPage input {
+  background-color: rgb(255, 250, 255);
+  width: 300px;
+  height: 40px;
+  margin: 2px;
+  padding: 8px;
+  border: 1px solid palevioletred;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.ContactPage textarea {
+  background-color: rgb(255, 250, 255);
+  width: 450px;
+  height: 150px;
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid palevioletred;
+  border-radius: 10px;
+  resize: none;
+}
+.ContactPage h1 {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 5%;
+  padding-bottom: 3px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.ContactPage #line {
+  height: 4px;
+  width: 100px;
+  background-color: palevioletred;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.ContactPage button {
+  background-color: #fdd5df;
+  border-radius: 9px;
+  box-shadow: rgba(158, 44, 108, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 108, 0.15) 0 1px 2px, rgba(187, 44, 108, 0.15) 0 2px 4px,
+    rgba(187, 44, 108, 0.15) 0 4px 8px, rgba(187, 44, 108, 0.15) 0 8px 16px,
+    rgba(187, 44, 108, 0.15) 0 16px 32px;
+  color: rgb(214, 73, 120);
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  transition: all 250ms;
+  border-width: 1px;
+  margin-top: 3;
+  margin-bottom: 3;
+  padding-top: 8;
+  padding-bottom: 8;
+  padding-left: 10;
+  padding-right: 10;
+}
+
+.ContactPage .submit_button {
+  margin-top: 15px;
+  margin-left: 11px;
+  padding: 7px 20px;
+}
+
+.ContactPage .submit_button:hover {
+  box-shadow: rgba(187, 44, 108, 0.35) 0 -25px 18px -14px inset,
+    rgba(115, 44, 108, 0.25) 0 1px 2px, rgba(115, 44, 108, 0.25) 0 2px 4px,
+    rgba(115, 44, 108, 0.25) 0 4px 8px, rgba(120, 44, 108, 0.25) 0 8px 16px,
+    rgba(115, 44, 108, 0.25) 0 16px 32px;
+  transform: scale(1.1);
+}
+.ContactPage #file {
+  display: none;
+}
+.ContactPage #upload {
+  background-color: rgb(255, 250, 255);
+  border: 2px dashed #999;
+  border-radius: 10px;
+  padding: 70px 0;
+  text-align: center;
+  color: #999;
+}
+.ContactPage #upload:hover {
+  border: 2px solid #bb2c6c59;
+  color: #bb2c6c59;
+  cursor: pointer;
+}
+.ContactPage .error {
+  display: block;
+  color: red;
+}
+.ContactPage .error-border {
+  border: 1px solid red;
+}
+.ContactPage #success {
+  color: rgb(77, 179, 77);
+  margin: 6%;
+  margin-left: 10px;
+}
+.ContactPage .big_container {
+  background-image: url(pink.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.ContactPage .product_container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40px;
+
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  width: 80%;
+  /* Slay Shadow */
+  /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    rgb(255, 85, 85) 40px -40px;
+ */
+  /* Fancy Shadow */
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.ContactPage .cont {
+  display: flex;
+  width: 700px;
+  height: 400px;
+  flex-direction: column;
+  margin: 20px;
+  padding: 3rem;
+}
+.ContactPage .disc_container {
+  background-color: rgb(255, 250, 255);
+  padding-top: 10;
+}
+
+.ContactPage a:hover {
+  cursor: pointer;
+}
+
+.ContactPage #qty {
+  color: hsl(340, 40%, 42%);
+  text-align: center;
+  width: 40px;
+  border-radius: 2px;
+}
+.ContactPage #increment,
+.ContactPage #decrement {
+  border-radius: 2px;
+  width: 30;
+}
+
+.ContactPage #addCart:hover,
+.ContactPage #addBuy:hover {
+  transform: scale(1.04);
+}
+
+.ContactPage .quantity {
+  display: flex;
+}
+.ContactPage #addCart,
+.ContactPage #addBuy {
+  color: hsl(340, 40%, 42%);
+  width: 200px;
+}
+
+.ContactPage #details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.ContactPage .photo {
+  width: 120px;
+  height: 120px;
+  margin: 3;
+  border: 3px solid;
+}
+.ContactPage .big_photo {
+  width: 320px;
+  height: 320px;
+}
+.ContactPage .img_container {
+  background-color: rgb(255, 250, 255);
+  display: flex;
+  padding: 4;
+  height: 450px;
+}
+
+.ContactPage .big_pic {
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: center;
+}
+.ContactPage .small_pic {
+  display: flex;
+  justify-content: space-around;
+}
+.ContactPage .small_photo:hover {
+  transform: scale(1.03);
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.ContactPage #about_pic {
+  height: auto;
+  width: 70%;
+  padding: 5%;
+}
+
+.ContactPage #about {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ContactPage #about_para {
+  font-size: large;
+  color: palevioletred;
+}
+
+.ContactPage .line {
+  height: 4px;
+  width: 150px;
+  background-color: palevioletred;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.ContactPage #contactBackground {
+  background-image: url(slaypink.jpg);
+  padding: 1px;
+}

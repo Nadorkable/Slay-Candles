@@ -1,0 +1,113 @@
+<html class="ContactPage">
+  <head>
+    <header class="header">
+      <div class="logoContent">
+        <div class="nav_left">
+          <a href="index.html" class="logo"
+            ><img id="logo" src="images/login-candle.png" alt=""
+          /></a><span>Slay Candles</span>
+        </div>
+        <div class="nav_middle">
+          <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li style="text-decoration: underline">
+              <a href="ContactPage.html">Contact</a>
+            </li>
+            <li><a href="AboutPage.html">About</a></li>
+          </ul>
+        </div>
+        <div class="nav_right">
+          <a href="login.html"
+            ><img class="User" src="images/user.png" onclick=""
+          /></a>
+          <img
+            class="Shopping_Cart"
+            src="images/shopping-cart.png"
+            onclick=""
+          />
+          <!--Search bar-->
+        </div>
+      </div>
+      <!--Nav bar-->
+    </header>
+  </head>
+  <!--Linking files-->
+  <link rel="stylesheet" href="loginstyles.css" />
+  <script defer src="script.js"></script>
+  <body>
+    <div id="contactBackground">
+      <div id="contactPopUp">
+        <h1>Contact us</h1>
+        <div id="line"></div>
+        <form onsubmit="event.preventDefault(); validateForm()">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Full Name"
+          />
+          <small class="error"></small>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+          />
+          <small class="error"></small>
+
+          <label for="msg">Message:</label>
+          <textarea
+            id="msg"
+            name="message"
+            placeholder="Your Message"
+          ></textarea>
+          <small class="error"></small>
+
+          <label id="upload" for="file">Upload file</label>
+          <input type="file" id="file" />
+
+          <div>
+            <button class="submit_button" type="submit">Submit</button>
+            <p id="success"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="FooterContent">
+        <div class="first">
+          <ul class="Left">
+            <li><a href="#Name">Slay Candles</a></li>
+            <li><a href="Mail">slayCandles@gmail.com</a></li>
+            <li>
+              <img class="Facebook" src="images/facebook.png" onclick="" />
+              <img class="Instagram" src="images/instagram.png" onclick="" />
+              <img class="Twitter" src="images/twitter.png" onclick="" />
+              <img class="Youtube" src="images/youtube.png" onclick="" />
+            </li>
+          </ul>
+        </div>
+        <div class="second">
+          <ul class="Middle">
+            <li><a href="#Support">Support</a></li>
+            <li><a href="ContactPage.html">Contact</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+          </ul>
+        </div>
+        <div class="third">
+          <ul class="Right">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#Candles">Candles</a></li>
+            <li><a href="#Care-kit">Care Kit</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Nav bar-->
+    </footer>
+  </body>
+</html>

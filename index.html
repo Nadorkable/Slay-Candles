@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="HomePage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slay Candles</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+
+    <!-- linking css and js files  -->
+    <link rel="stylesheet" href="loginstyles.css" />
+    <script defer src="index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+
+  <body>
+    <!-- header section start here  -->
+
+    <header class="header">
+      <div class="logoContent">
+        <div class="nav_left">
+          <a href="index.html" class="logo"><img id = "logo" src="images/login-candle.png" alt="" /></a>
+          <span>Slay Candles</span>
+        </div>
+        <div class="nav_middle">
+          <ul class="navlist">
+          <li style="text-decoration: underline;"><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+          <li><a href="AboutPage.html">About</a></li>
+         
+        </ul> 
+        </div>
+        <div class="nav_right">
+          <a href="login.html" ><img class="User" src="images/user.png" onclick=""></a>
+         <img class="Shopping_Cart" src="images/shopping-cart.png" onclick="">
+          <!--Search bar-->
+      </div>
+      </div>
+      <!--Nav bar-->
+      
+    </header>
+
+<div class="HomeContainer">
+    <section class="container">
+      <div class="Slider">
+
+        <input type="radio" class="radio" name="images" id="radio-1" onclick="plusSlides(-1)">
+        <input type="radio" class="radio" name="images" id="radio-2" onclick="plusSlides(0)">
+        <input type="radio" class="radio" name="images" id="radio-3" onclick="plusSlides(1)">
+
+      
+      <div class="mySlides fade">
+        <img id="one" src="images/slider1.png">
+      </div>
+
+      <div class="mySlides fade">
+        <img id="two" src="images/slider2.png" >
+      </div>
+      
+      <div class="mySlides fade">
+        <img id="three" src="images/slider3.png" >
+        <!-- <div class="text">Caption Three</div> -->
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <div class="dot">
+        <label for="radio-1" id="label-1"></label>
+        <label for="radio-2" id="label-2"></label>
+        <label for="radio-3" id="label-3"></label>
+      </div>
+    </div>  
+    </section>
+ <!--Categories-->
+
+<div class="categories">
+    <div class="pillar-candles">
+      <a href="#Pillar">
+        <figure>
+        <img class="pillar" src="images/pillar-candle.png" onclick="" >
+        <figcaption class="Caption">Pillar Candles</figcaption>
+      </figure>
+      </a>
+    </div>
+    <div class="scented">
+      <a href="#Scented">
+        <figure>
+        <img class="scent" src="images/scented.png" onclick="" >
+        <figcaption class="Caption">Scented Candles</figcaption>
+      </figure>
+      </a>
+    </div>
+    <div class="gift">
+      <a href="#Gifts">
+        <figure>
+      <img class="giftie" src="images/gift.png" onclick="" >
+      <figcaption class="Caption">Gifts</figcaption>
+    </figure>
+    </a>
+
+  </div>
+  </div>
+    
+      <div class="ProductsContainer">
+        <h1>
+           Featured Products 
+        <div class="line"></div>
+      </h1>
+
+      <div class="small_prods_cont">
+        <div class="cont" id="prod1">
+          <a class="pagelink" href="EmpowerCandle.html"></a>
+          <img class="pics" src="Candles/firstCandle_1.jpg" />
+          <h3>Empower Scented Candle</h3>
+          <h4>399.00 L.E</h4>
+        </div>
+        <div class="cont" id="prod2">
+          <a class="pagelink" href="RelaxCandle.html"></a>
+          <img class="pics" src="Candles/secondCandle_1.jpg" />
+          <h3>Relax Scented Candle</h3>
+          <h4>399.00 L.E</h4>
+        </div>
+        <div class="cont" id="prod3">
+          <a class="pagelink" href="BluePillar.html"></a>
+          <img class="pics" src="Candles/firstPillar_1.jpg" />
+          <h3>Williamsburg Blue Pillar</h3>
+          <h4>799.00 L.E</h4>
+        </div>
+        <div class="cont" id="prod4">
+          <a class="pagelink" href="DarkPillar.html"></a>
+          <img class="pics" src="Candles/secondPillar_1.jpg" />
+          <h3>Abyss Pillar</h3>
+          <h4>799.00 L.E</h4>
+        </div>
+        <div class="cont" id="prod5">
+          <a class="pagelink" href="RelieveGift.html"></a>
+          <img class="pics" src="Candles/firstGift_1.jpg" />
+          <h3>Relieve Gift Bundle</h3>
+          <h4>599.00 L.E</h4>
+        </div>
+        <div class="cont" id="prod6">
+          <a class="pagelink" href="RelaxGift.html"></a>
+          <img class="pics" src="Candles/secondGift_1.jpg" />
+          <h3>Relax Gift Bundle</h3>
+          <h4>599.00 L.E</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+    <footer class="footer">
+      <div class="FooterContent">
+        
+          <div class="first">
+        <ul class="Left">
+          <li><a href="#Name">Slay Candles</a></li>
+          <li><a href="Mail">slayCandles@gmail.com</a></li>
+          <li><img class="Facebook" src="images/facebook.png" onclick="">
+          <img class="Instagram" src="images/instagram.png" onclick="">
+          <img class="Twitter" src="images/twitter.png" onclick="">
+          <img class="Youtube" src="images/youtube.png" onclick=""></li>
+        </ul> 
+      </div>
+      <div class="second">
+        <ul class="Middle">
+          <li><a href="#Support">Support</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+          <li><a href="AboutPage.html">About</a></li>
+        </ul> 
+      </div>
+      <div class="third">
+        <ul class="Right">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#Candles">Candles</a></li>
+          <li><a href="#Care-kit">Care Kit</a></li>
+        </ul> 
+      </div>
+        
+      </div>
+      <!--Nav bar-->
+      
+    </footer>
+
+  </body>
+</html>
